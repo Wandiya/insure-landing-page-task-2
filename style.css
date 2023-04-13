@@ -32,11 +32,11 @@ body {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-size: 3rem;
-    padding-inline: 1.3rem;
+    /* padding-inline: 1.0rem; */
 }
 
 .about p {
-    padding-inline: 1.7rem;
+    /* padding-inline: 1.0rem; */
     font-family: 'Karla', sans-serif;
     font-weight: 400;
 }
@@ -84,15 +84,16 @@ aside h1 {
 
 aside .main_info {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    padding-inline: 1.7rem;
+    /* padding-inline: 1.7rem; */
+    margin-top: 150px;
 }
 
 aside .main_info .wrap {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
 }
 
@@ -118,7 +119,7 @@ aside .work {
     background-image: url(images/bg-pattern-how-we-work-mobile.svg);
     background-repeat: no-repeat;
     background-position: top 0 right 0;
-    margin-inline: 1.3rem;
+    /* margin-inline: 1.3rem; */
     margin-block-start: 8rem;
     padding-block: 3.5rem;
     display: flex;
@@ -207,6 +208,10 @@ footer {
     list-style: none;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 .ft_detail .ft_detail-btn ul li {
     padding-block: 0.2rem;
 }
@@ -253,8 +258,29 @@ footer {
 
 @media screen and (min-width: 624px) {
     /* Navabar Styles */
+    main .family {
+        width: 40%;
+        position: absolute;
+        height: 95%;
+        top: 15%;
+        right: 8.3%;
+    }
+    main p {
+        text-align: left;
+        padding-inline: 0px;
+        font-size: 16px;
+        width: 40%;
+    }
     .navbar-toggler {
         display: none;
+    }
+    .container-fluid {
+        margin: 0px;
+        margin-inline: 6.3%;
+    }
+    .container-fluid .view {
+        border: solid black;
+        color: black;
     }
     .nav_li ul {
         font-family: 'Karla', sans-serif;
@@ -287,16 +313,17 @@ footer {
         display: flex;
         justify-content: space-around;
         background-color: hsl(256, 26%, 20%);
-        padding: 8rem;
+        padding-inline: 5rem;
     }
     article .main .about {
         display: inline-block;
         text-align: left;
-        order: -1;
         background-size: 0%;
+        padding-inline: 0px;
     }
     article .main .about h1 {
         text-align: left;
+        padding-left: 0px;
     }
     article .main .about h1 span {
         text-align: left;
@@ -307,15 +334,17 @@ footer {
     }
     article .main .about button {
         margin-block-start: 2rem;
-        margin-inline-start: 1.6rem;
+        /* margin-inline-start: 1.6rem; */
     }
     /* Aside Styles */
     aside {
-        margin-inline: 5rem;
+        margin-inline: 4rem;
     }
     aside h1 {
         text-align: left;
-        padding-inline-start: 4rem;
+        /* padding-inline-start: 1rem; */
+        padding-top: 0%;
+        margin-top: 10%;
     }
     aside h1 span {
         border-top: 1px solid hsla(0, 2%, 47%, 0.479);
@@ -328,7 +357,7 @@ footer {
     aside .main_info .wrap {
         display: block;
         align-self: center;
-        padding-inline: 1.9rem;
+        /* padding-inline: 1.9rem; */
     }
     aside .main_info .wrap p {
         text-align: left;
@@ -364,7 +393,7 @@ footer {
     }
     /* Footer Styles */
     footer {
-        padding-inline: 6.6rem;
+        padding-inline: 5rem;
         background-image: url(images/bg-pattern-footer-desktop.svg);
         background-repeat: no-repeat;
     }
@@ -378,15 +407,23 @@ footer {
         border-bottom: none;
         padding: 0% 0% 1rem 0%;
     }
+    .footer_info .social li a img:hover {
+        background-color: black;
+    }
     .ft_detail {
         flex-direction: row;
         justify-content: space-between;
     }
     .ft_detail .ft_detail-btn h4 {
         padding-top: 3rem;
+        text-decoration: none;
     }
     .ft_detail .ft_detail-btn ul,
     .ft_detail .ft_detail-btn h4 {
         text-align: left;
+    }
+    .ft_detail .ft_detail-btn h4 a:hover {
+        text-decoration: underline;
+        cursor: white;
     }
 }
