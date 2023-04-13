@@ -208,7 +208,7 @@ footer {
     list-style: none;
 }
 
-a:link {
+.ft_detail .ft_detail-btn a:link {
     text-decoration: none;
 }
 
