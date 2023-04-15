@@ -182,6 +182,11 @@ footer {
 
 .footer_info ul.socials li img {
     padding-inline: 0.5rem;
+    color: #000;
+}
+
+.footer_info ul.social li a img:hover {
+    background-color: #000;
 }
 
 .ft_detail {
@@ -221,6 +226,7 @@ footer {
 
 .nav_li ul {
     display: none;
+    text-decoration: none;
 }
 
 .collapse {
@@ -247,6 +253,7 @@ footer {
 
 .text-white li {
     padding-block: 0.8rem;
+    text-decoration: none;
 }
 
 .text-white li.plan {
@@ -256,14 +263,17 @@ footer {
 
 /* Desktop Styles */
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 724px) {
     /* Navabar Styles */
     main .family {
-        width: 40%;
+        width: 50%;
         position: absolute;
         height: 95%;
         top: 15%;
         right: 8.3%;
+    }
+    main .family {
+        display: inline-block;
     }
     main p {
         text-align: left;
@@ -423,7 +433,12 @@ footer {
         text-align: left;
     }
     .ft_detail .ft_detail-btn h4 a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         cursor: white;
+    }
+    a:link {
+        /* color: hsl(0, 0%, 98%); */
+        text-decoration: none;
+        color: hsla(0, 4%, 26%, 0.233)
     }
 }
