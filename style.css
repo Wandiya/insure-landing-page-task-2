@@ -418,7 +418,7 @@ footer {
         padding: 0% 0% 1rem 0%;
     }
     .footer_info .social li a img:hover {
-        background-color: black;
+        background-color: hsla(0, 4%, 26%, 0.233);
     }
     .ft_detail {
         flex-direction: row;
@@ -439,6 +439,6 @@ footer {
     a:link {
         /* color: hsl(0, 0%, 98%); */
         text-decoration: none;
-        color: hsla(0, 4%, 26%, 0.233)
+        color: hsl(256, 26%, 20%);
     }
 }
