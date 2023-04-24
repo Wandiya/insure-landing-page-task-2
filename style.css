@@ -200,7 +200,7 @@ footer {
     justify-content: center;
 }
 
-.ft_detail .ft_detail-btn h4 {
+.ft_detail .ft_detail-btn h3 {
     padding-block-end: 1rem;
     letter-spacing: 1px;
     font-size: 16px;
@@ -424,15 +424,15 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
-    .ft_detail .ft_detail-btn h4 {
+    .ft_detail .ft_detail-btn h3 {
         padding-top: 3rem;
         text-decoration: none;
     }
     .ft_detail .ft_detail-btn ul,
-    .ft_detail .ft_detail-btn h4 {
+    .ft_detail .ft_detail-btn h3 {
         text-align: left;
     }
-    .ft_detail .ft_detail-btn h4 a:hover {
+    .ft_detail .ft_detail-btn h3 a:hover {
         text-decoration: none;
         cursor: white;
     }
